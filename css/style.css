@@ -1,126 +1,87 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background: url(../img/race.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 100vh;
-	overflow: hidden;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-h1 {
-	text-align: center;
-	color: wheat;
-	margin-top: 30px;
-	font-size: 3em;
-	font-weight: bolder;
-	margin-bottom: 30px;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.container {
-	width: 80%;
-	height: 700px;
-	position: relative;
-	margin: 0 auto;
-}
-
-img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.slide-container {
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-}
-
-.slides {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	position: relative;
-	height: 100%;
-	transition: transform 250ms ease-in;
-}
-
-.slide {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-}
-
-.icons:hover::after {
-	display:none;
-}
-
-.slide-container:hover + .icons {
-	background-color: rgba(0, 0, 0, 0.7);
-	display:flex;
-}
-
-.btn {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	padding: 20px;
-	background: transparent;
-	border: 0;
-	cursor: pointer;
-	color: rgba(255, 255, 255, 0.8);
-	font-size: 20px;
-	transition: 0.6s ease;
-	background-color: rgba(0, 0, 0, 0.2);
-}
-
-.btn:hover {
-	background-color: rgba(0, 0, 0, 0.7);
-}
-
-.prev {
-	left: 20px;
-}
+/* Position the "next button" to the right */
 .next {
-	right: 20px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
 .text {
-	color: rgb(41, 35, 23);
-	font-size: 2rem;
-	font-weight: bolder;
-	padding: 8px 12px;
-	position: absolute;
-	bottom: 8px;
-	width: 100%;
-	text-align: center;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-.dots {
-	padding: 20px 0;
-	text-align: center;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
+/* The dots/bullets/indicators */
 .dot {
-	margin: 0 10px;
-	cursor: pointer;
-	width: 15px;
-	height: 15px;
-	border: 0;
-	border-radius: 50%;
-	background-color: rgb(22, 15, 2);
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.dot:hover {
-	background-color: rgb(49, 42, 28);
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-.current-slide {
-	background: rgb(74, 52, 9);
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
