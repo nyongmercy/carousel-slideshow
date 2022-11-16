@@ -57,9 +57,9 @@ img {
 	width: 100%;
 }
 
-/*.icons {
-	display: none;
-} */
+.icons {
+	display:button;
+}
 
 .slide-container:hover + .icons {
 	background-color: rgba(0, 0, 0, 0.7);
