@@ -63,7 +63,7 @@ img {
 
 .slide-container:hover + .icons {
 	background-color: rgba(0, 0, 0, 0.7);
-	display: flex;
+	display:flexbox;
 }
 
 .btn {
@@ -92,7 +92,7 @@ img {
 }
 
 .text {
-	color: wheat;
+	color: rgb(41, 35, 23);
 	font-size: 2rem;
 	font-weight: bolder;
 	padding: 8px 12px;
