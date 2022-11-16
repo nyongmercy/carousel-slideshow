@@ -63,7 +63,7 @@ img {
 
 .slide-container:hover + .icons {
 	background-color: rgba(0, 0, 0, 0.7);
-	display: block;
+	display: flex;
 }
 
 .btn {
