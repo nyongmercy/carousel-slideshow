@@ -58,7 +58,7 @@ img {
 }
 
 .icons {
-	display:button;
+	display:flexbox;
 }
 
 .slide-container:hover + .icons {
