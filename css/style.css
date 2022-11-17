@@ -15,7 +15,11 @@ img {vertical-align: middle;}
   display: none;
 }
 
-.slideshow-container:hover + .prev, .next {
+.slideshow-container:hover + .prev {
+  display: block;
+}
+
+.slideshow-container:hover + .next {
   display: block;
 }
 
