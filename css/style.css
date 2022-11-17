@@ -7,7 +7,7 @@ img {vertical-align: middle;}
 .slideshow-container {
   max-width: 700px;
   position: relative;
-  margin: 0 auto;
+  margin: auto;
   overflow: hidden;
 }
 
@@ -15,11 +15,11 @@ img {vertical-align: middle;}
   display: none;
 }
 
-.slideshow-container:hover + .prev {
+.slideshow-container:hover + .prev:hover {
   display: block;
 }
 
-.slideshow-container:hover + .next {
+.slideshow-container:hover + .next:hover {
   display: block;
 }
 
