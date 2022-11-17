@@ -10,7 +10,7 @@ img {vertical-align: middle;}
   margin: auto;
   overflow: hidden;
 }
-
+/*
 .prev, .next {
   display: none;
 }
@@ -21,7 +21,7 @@ img {vertical-align: middle;}
 
 .slideshow-container:hover + .next:hover {
   display: block;
-}
+} */
 
 /* Next & previous buttons */
 .prev, .next {
